@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .container {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 4s;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(500px, 0);
+    }
+
+    50% {
+        transform: translate(500px, 500px);
+    }
+    75%{
+        transform: translate(0,500px);
+    } */
+.container{
+    display: flex;
+}
+
+.box > img{
+width: 200px;
+height: 200px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    justify-content: space-evenly;
+    animation: slide 5s linear  infinite; 
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+transform: translateX(-100%);
+    }
+}
+.box:hover{
+    animation-play-state: paused ;
+}
